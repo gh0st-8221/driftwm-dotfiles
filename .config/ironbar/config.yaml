@@ -1,0 +1,29 @@
+position: top
+height: 30
+icon_theme: "Tela-circle-nord"
+margin:
+  top: 5
+  left: 10
+  right: 10
+
+features:
+  battery: true
+
+start: []
+
+center:
+  - type: clock
+    format: "%Y-%m-%d %H:%M:%S"
+
+end:
+  - type: volume
+    format: "{icon} {percentage}%"
+    on_scroll_up: "wpctl set-volume @DEFAULT_AUDIO_SINK@ 1%+"
+    on_scroll_down: "wpctl set-volume @DEFAULT_AUDIO_SINK@ 1%-"
+    icons:
+      volume_high: ""
+      volume_medium: ""
+      volume_low: ""
+      muted: "󰝟"
+  - type: tray
+    spacing: 10

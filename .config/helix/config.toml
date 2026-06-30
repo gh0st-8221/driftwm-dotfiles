@@ -1,0 +1,26 @@
+theme = "ghost"
+[editor]
+line-number = "relative"
+mouse = true
+cursorline = true
+scrolloff = 5
+color-modes = true
+true-color = true
+bufferline = "multiple"
+[editor.cursor-shape]
+normal = "block"
+insert = "bar"
+select = "underline"
+[editor.file-picker]
+hidden = false
+[editor.statusline]
+left = ["mode", "spinner", "file-name", "file-modification-indicator"]
+center = []
+right = ["diagnostics", "selections", "position", "file-encoding"]
+[editor.lsp]
+display-messages = true
+display-inlay-hints = true
+[keys.normal]
+"esc" = ["collapse_selection", "keep_primary_selection"]
+"space".w = ":w"
+"space".q = ":q"

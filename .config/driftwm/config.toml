@@ -1,0 +1,90 @@
+# Validate with: driftwm --check-config
+
+autostart = [
+  "pipewire",
+  "pipewire-pulse",
+  "wireplumber",
+  "hyperhdr",
+  "wl-paste --type text --watch cliphist store",
+  "wl-paste --type image --watch cliphist store",
+  "~/.config/driftwm/driftwm-monitors"
+]
+
+mod_key = "super"
+focus_follows_mouse = false
+window_placement = "auto"
+
+[env]
+QT_WAYLAND_DISABLE_WINDOWDECORATION = "0"
+MOZ_ENABLE_WAYLAND = "1"
+
+[input.mouse]
+accel_speed = 1.0
+accel_profile = "flat"
+natural_scroll = false
+
+[input.keyboard]
+layout = "us,ua"
+variant = ","
+options = "grp:win_space_toggle"
+model = "pc105"
+repeat_rate = 25
+repeat_delay = 200
+layout_independent = true
+num_lock = true
+caps_lock = false
+
+[decorations]
+bg_color = "#101010"
+fg_color = "#FFFFFF"
+corner_radius = 10
+shadow = true
+default_mode = "minimal"
+border_width = 1
+border_color = "#303030"
+border_color_focused = "#0000ff"
+
+[keybindings]
+"mod+q" = "exec alacritty"
+"mod+w" = "exec firefox"
+"mod+c" = "close-window"
+"mod+d" = "exec fuzzel"
+"mod+shift+w" = "exec ~/.config/driftwm/ironbar-toggle"
+"mod+tab" = "exec ~/.config/driftwm/window-search.sh"
+"mod+s" = "exec steam"
+"alt+Print" = "spawn sh -c 'grim -g \"$(slurp)\" - | wl-copy'"
+"Print" = "spawn sh -c 'grim ~/Screenshots/screenshot_$(date +%Y%m%d_%H%M%S).png'"
+"ctrl+Print" = "spawn sh -c 'grim -g \"$(slurp)\" ~/Screenshot_$(date +%Y%m%d_%H%M%S).png'"
+"mod+h" = "center-nearest left"
+"mod+j" = "center-nearest down"
+"mod+k" = "center-nearest up"
+"mod+l" = "center-nearest right"
+"mod+ctrl+h" = "pan-viewport left"
+"mod+ctrl+j" = "pan-viewport down"
+"mod+ctrl+k" = "pan-viewport up"
+"mod+ctrl+l" = "pan-viewport right"
+"mod+shift+h" = "nudge-window left"
+"mod+shift+j" = "nudge-window down"
+"mod+shift+k" = "nudge-window up"
+"mod+shift+l" = "nudge-window right"
+"mod+equal" = "zoom-in"
+"mod+minus" = "zoom-out"
+"mod+0" = "zoom-reset"
+"mod+a" = "zoom-to-fit"  
+"mod+x" = "center-window"
+
+[[window_rules]]
+app_id = "/.*/"
+size = [2550, 1430]
+
+[[outputs]]
+name = "DP-3"
+scale = 1.0
+position = [0, 0]
+mode = "2560x1440@165"
+
+[[outputs]]
+name = "HDMI-A-4"
+scale = 1.0
+position = [2560, 310]
+mode = "1920x1080@60"
