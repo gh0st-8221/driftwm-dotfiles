@@ -1,0 +1,101 @@
+window.calendar, .calendar {
+    background-color: rgba(0, 0, 0, 0.55);
+    color: #ffffff;
+    border-radius: 15px;
+    padding: 15px;
+    border: 1px solid rgba(255, 255, 255, 0.05);
+}
+
+.background {
+    background-color: rgba(0, 0, 0, 0.0);
+}
+
+.widget, .clock, .workspaces, .tray, .focused, .volume, .language {
+    background-color: rgba(0, 0, 0, 0.55);
+    background-image: none;
+    box-shadow: none;
+    color: #ffffff;
+    margin: 0 4px;
+    padding: 0 12px;
+    border-radius: 20px;
+    border: 1px solid rgba(255, 255, 255, 0.05);
+}
+
+* {
+    font-family: "JetBrainsMono Nerd Font";
+    font-size: 13px;
+    text-shadow: none;
+    box-shadow: none;
+}
+
+.workspaces button {
+    padding: 1px;
+    margin: 0 1px;
+    border-radius: 19px;
+    border: 0;
+    color: #ffffff;
+    background-color: transparent;
+    transition: all 0.2s ease-in-out;
+    opacity: 0.4;
+}
+
+.workspaces .item.focused {
+    color: #ffffff;
+    background: rgba(255, 255, 255, 0.12);
+    border-radius: 19px;
+    min-width: 50px;
+    opacity: 1;
+}
+
+.tray .item {
+    padding: 0 6px;
+    margin: 2px;
+    border-radius: 12px;
+}
+
+.tray .item:hover {
+    background: rgba(255, 255, 255, 0.08);
+}
+
+.calendar button {
+    color: #888888;
+    background: transparent;
+    box-shadow: none;
+    border: none;
+}
+
+.calendar button:hover {
+    color: #ffffff;
+    background: rgba(255, 255, 255, 0.08);
+}
+
+.calendar header {
+    color: #ffffff;
+}
+
+.calendar:selected {
+    background-color: #ffffff;
+    color: #000000;
+}
+
+.volume popover, .volume menu, popover {
+    background-color: #1a1a1a;
+    color: #ffffff;
+    border: 1px solid rgba(255, 255, 255, 0.15);
+    border-radius: 12px;
+    opacity: 1.0;
+}
+
+.volume list {
+    background: transparent;
+    color: #ffffff;
+}
+
+.volume row {
+    padding: 6px 12px;
+    color: #ffffff;
+}
+
+.volume row:hover {
+    background-color: rgba(255, 255, 255, 0.1);
+}

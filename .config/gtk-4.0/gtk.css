@@ -1,0 +1,98 @@
+* {
+    background-image: none;
+    box-shadow: none;
+    text-shadow: none;
+    -gtk-icon-shadow: none;
+}
+
+window, dialog, popover, .popup, popover contents, .background {
+    background-color: rgba(15, 15, 15, 0.85);
+    color: #ffffff;
+    border: none;
+    border-radius: 16px;
+}
+
+box, grid, bin, stack, notebook, overlay {
+    background-color: transparent;
+}
+
+label, image {
+    color: #ffffff;
+    background-color: transparent;
+}
+
+calendar {
+    background-color: transparent;
+    color: #ffffff;
+}
+
+calendar:selected {
+    background-color: rgba(255, 255, 255, 0.2);
+    border-radius: 8px;
+}
+
+calendar.header {
+    background-color: transparent;
+    color: #ffffff;
+}
+
+button {
+    background-color: rgba(255, 255, 255, 0.08);
+    color: #ffffff;
+    border: none;
+    border-radius: 12px;
+}
+
+button:hover {
+    background-color: rgba(255, 255, 255, 0.15);
+}
+
+scale trough, progressbar trough {
+    background-color: rgba(255, 255, 255, 0.1);
+    border-radius: 99px;
+}
+
+scale trough:horizontal, progressbar trough:horizontal {
+    min-height: 6px;
+    min-width: 100px;
+}
+
+scale trough:vertical, progressbar trough:vertical {
+    min-width: 6px;
+    min-height: 100px;
+}
+
+scale highlight, progressbar progress, progress {
+    background-color: #0000ff;
+    border-radius: 99px;
+}
+
+scale slider {
+    background-color: #ffffff;
+    border: none;
+    border-radius: 99px;
+    min-height: 14px;
+    min-width: 14px;
+}
+
+entry, textview, combobox, dropdown, listview, list {
+    background-color: rgba(0, 0, 0, 0.5);
+    color: #ffffff;
+    border: none;
+    border-radius: 10px;
+}
+
+menu, list {
+    background-color: transparent;
+    border-radius: 12px;
+}
+
+menuitem, list row, row {
+    background-color: transparent;
+    color: #ffffff;
+    border-radius: 8px;
+}
+
+menuitem:hover, list row:hover, row:hover {
+    background-color: rgba(255, 255, 255, 0.1);
+}
